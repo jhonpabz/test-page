@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const iosLink = "https://apps.apple.com/app/idXXXXXXXXX";
-  const androidLink = "https://play.google.com/store/apps/details?id=XXXXXXXXX";
+  const iosLink = "https://www.google.com/maps";
+  const androidLink = "https://www.youtube.com/";
   const btn = document.querySelector("#btnDownload a");
 
   function isIOS() {
