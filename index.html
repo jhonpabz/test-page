@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3rd</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Swiper Background -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/b1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/b2.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/b3.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="xz" id="btnDownload">
+      <a class="btn-download ios_url modern-btn" href="/">
+        <span class="text">Download for iOS</span>
+      </a>
+    </div>
+
+    <script src="./js/links.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>

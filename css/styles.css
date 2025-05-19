@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .swiper {
+    height: 100vh;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .swiper-slide img {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .xz {
+    position: absolute;
+    top: 92%;
+    z-index: 9;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .xz img {
+    width: 160px;
+    animation: zoom 2s infinite;
+  }
+  .ios_url {
+    padding-right: 15px;
+  }
+
+  .android_url {
+    padding-right: 15px;
+  }
+
+        .modern-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      background: linear-gradient(90deg, #007aff 0%, #00c6fb 100%);
+      color: #fff;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 2em;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+      }
+      .modern-btn:hover, .modern-btn:focus {
+      background: linear-gradient(90deg, #0051a8 0%, #009ecf 100%);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      transform: translateY(-2px) scale(1.03);
+      }
+      .modern-btn .icon {
+      font-size: 1.4em;
+      line-height: 1;
+      /* Apple logo Unicode */
+      }
+      .modern-btn .text {
+      letter-spacing: 0.02em;
+      }
+  
+  @media screen and (max-width: 768px) {
+    .swiper {
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  
+    main {
+      width: 100%;
+      height: 100vh;
+    }
+  
+    #model {
+      width: 100% !important;
+      height: 100vh;
+    }
+  }
+  
+  a {
+    z-index: 99999;
+  }
+  
